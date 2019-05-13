@@ -1,0 +1,71 @@
+/* Tribute Page */
+/* Dirk Frimout */
+/* ============ */
+
+/* CSS Variables */
+:root {
+    --theme: #ff5900;
+    --sw: #1c4b77;
+    --titles: #ffffff;
+    --subtitles: #f2f2f2;
+    --borders: #333333;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* CSS General */
+html {
+    background-color: var(--theme);
+}
+
+body {
+    margin: 30px 50px;
+    line-height: 20px;
+ }
+
+header {
+    color: var(--titles);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+ }
+
+ .divide-line-header {
+    color: var(--titles);
+    margin-top: 25px;
+    width: 25%;
+ }
+
+ /* CSS Tribute Page */
+ #title {
+    color: var(--titles);
+    text-align: center;
+
+ }
+
+ #date-born {
+    color: var(--subtitles);
+    text-align: center;
+    font-size: 12px;
+ }
+
+ #tribute-info {
+    color: var(--subtitles);
+    text-align: center;
+    font-size: 12px;
+ }
+
+ /* FOOTER CSS */
+footer {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    color: var(--titles);
+    background-color: var(--sw);
+    text-align: center;
+ }
+ 
+ i.fab, i.fas {
+    color: var(--titles);
+    font-size: 22px;
+    margin-left: 5px;
+ }
