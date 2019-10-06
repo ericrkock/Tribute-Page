@@ -5,11 +5,15 @@
 /* CSS Variables */
 :root {
     --theme: #ff5900;
+    --txt: #333;
     --sw: #1c4b77;
     --titles: #ffffff;
     --subtitles: #f2f2f2;
+    --extra-bg: black;
+    --wiki-bg: yellow;
+    --wiki-txt: red;
     --borders: #333333;
-    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
 }
 
 /* CSS General */
@@ -48,16 +52,82 @@ header {
     font-size: 12px;
  }
 
+ #img-div {
+   padding-top: 10px;
+}
+
+#image {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 80%;
+   border-radius: 3px;
+   box-shadow: var(--shadow);
+}
+
+.date-spaceflight {
+   font-size: 15px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   color: var(--titles);
+   margin-top: -25px;
+}
+
  #tribute-info {
     color: var(--subtitles);
     text-align: center;
     font-size: 12px;
  }
 
+#tribute {
+   margin-top: 25px;
+   margin-bottom: 25px;
+   display: grid;
+   grid-template-columns: 30% 50%;
+   margin-left: 25%;
+   column-count: 1;
+   font-size: 14px;    
+}
+
+#tribute h3 {
+   font-size: 24px;
+   text-align: right;
+   color: var(--titles);
+}
+
+#tribute-extra {
+   background-color: var(--extra-bg);
+   color: var(--titles);
+   margin-bottom: 20px;
+   padding: 15px;
+   text-align: justify;
+   column-count: 4;
+   column-gap: 40px;
+}
+
+#tribute-extra h3 {
+   font-size: 24px;
+}
+
+#tribute-link-txt {
+   margin-bottom: 20px;
+   color: var(--wiki-txt);
+   background-color: var(--wiki-bg);
+   padding: 15px 0 0 30px;
+   font-size: 12px;
+}
+
+#tribute-link {
+   
+   color: black;
+   font-size: 12px;
+}
+
  /* FOOTER CSS */
 footer {
     font-size: 14px;
-    padding-top: 5px;
+    padding-top: 15px;
     padding-bottom: 15px;
     color: var(--titles);
     background-color: var(--sw);
