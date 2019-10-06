@@ -119,23 +119,40 @@ header {
 }
 
 #tribute-link {
-   
    color: black;
    font-size: 12px;
 }
 
  /* FOOTER CSS */
 footer {
-    font-size: 14px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: var(--titles);
-    background-color: var(--sw);
-    text-align: center;
- }
+   font-size: 14px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   color: var(--titles);
+   background-color: var(--sw);
+   text-align: center;
+}
  
- i.fab, i.fas {
-    color: var(--titles);
-    font-size: 22px;
-    margin-left: 5px;
+i.fab, i.fas {
+   color: var(--titles);
+   font-size: 22px;
+   margin-left: 5px;
+}
+
+@media(max-width: 1000px) {
+   #tribute-extra {
+      column-count: 3;
+   }
+}
+
+@media(max-width: 750px) {
+   #tribute-extra {
+      column-count: 2;
+   }
+ }
+
+ @media(max-width: 500px) {
+   #tribute-extra {
+      column-count: 1;
+   }
  }
